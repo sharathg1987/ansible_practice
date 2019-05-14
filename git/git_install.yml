@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  remote_user: root
+  tasks:
+          - name: Installing Git
+            zypper:
+                    name: git
+                    state: latest
+                    update_cache: yes
