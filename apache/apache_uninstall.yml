@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  remote_user: root
+  tasks:
+          - name: Make sure apache is stopped
+            service:
+                    name: apache2
+                    state: stopped
+          - name: Uninstalling apache
+            zypper:
+                    name: apache2
+                    state: absent
