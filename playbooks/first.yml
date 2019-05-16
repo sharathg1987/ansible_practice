@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+        - name: First Yml page
+          file:
+               dest: /root/firstpage.txt
+               state: absent
+               

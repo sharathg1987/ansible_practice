@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+       - name: Removing httpd
+         yum:
+             name: httpd
+             state: absent
+
+ 

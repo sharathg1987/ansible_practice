@@ -1,0 +1,5 @@
+---
+# tasks file for base_httpd
+- import_tasks: httpd_install.yml
+- import_tasks: httpd_configure.yml
+- import_tasks: httpd_restart.yml
